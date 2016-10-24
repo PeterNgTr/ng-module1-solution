@@ -17,7 +17,7 @@
         $scope.checkLunchMenu = function () {
             var result = $scope.lunchMenu.split(",").length;
 
-            if (result > 1 && result <= 3) {
+            if (result >= 1 && result <= 3) {
                 $scope.message = 'Enjoy!';
                 $scope.turnGreen();
             } else if (result > 3) {
